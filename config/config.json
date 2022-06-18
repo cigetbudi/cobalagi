@@ -1,7 +1,7 @@
 {
-    "DB_USERNAME" : "root",
+    "DB_USERNAME" : "postgres",
     "DB_PASSWORD" : "Steponit1234!",
-    "DB_PORT" : "3306",
+    "DB_PORT" : "5432",
     "DB_HOST" : "127.0.0.1",
-    "DB_NAME" : "gol"
+    "DB_NAME" : "dbcoba"
 }
