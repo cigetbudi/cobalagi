@@ -3,11 +3,13 @@ package main
 import (
 	"cobalagi/db"
 	"cobalagi/routes"
+	"os"
 )
 
 func main() {
 
 	db.Init()
 	route := routes.Init()
-	route.Logger.Fatal(route.Start(":8080"))
+	port := os.Getenv("PORT")
+	route.Logger.Fatal(route.Start(":" + port))
 }
