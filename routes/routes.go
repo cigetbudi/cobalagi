@@ -16,7 +16,7 @@ func Init() *echo.Echo {
 
 	//API
 	route.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Halo Ronggod <3")
+		return c.String(http.StatusOK, "Halo Kesayangan, wanita impian, tujuan kahir, rumah untukku pulang dan pujaan hati. Love you so much <3 jangan lupa makan")
 	})
 
 	route.POST("user/create_user", func(c echo.Context) error {
