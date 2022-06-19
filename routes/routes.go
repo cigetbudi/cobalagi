@@ -15,6 +15,10 @@ func Init() *echo.Echo {
 	route := echo.New()
 
 	//API
+	route.GET("/", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Halo Ronggod <3")
+	})
+
 	route.POST("user/create_user", func(c echo.Context) error {
 		user := new(models.Users)
 		c.Bind(user)
